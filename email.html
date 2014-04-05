@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head><meta charset="UTF-8"></head>
+<body>
+
+<table width="500">
+	<tr>
+		<td align="center">
+			<img src="http://localhost/sioci/imagens/loguinha.png" alt="" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+		<p>Olá <strong>{$u->nome}</strong>, seu cadastro como tutor da escola {$u->escola} está quase finalizado. Para coclui-lo, precisamos que você clique no link de ativação abaixo. Isso garante que é você quem está se cadastrando no nosso sistema, e não outra pessoa.</p>
+		<p>Caso o link abaixo não esteja funcinando, apenas copie-o e cole na barra de endereços do seu navegador.</p>
+		<p align="center"><a href="'.$servidor.'home.php?q=ativar&uid='.$u->uid.'">'.$servidor.'home.php?q=ativar&uid='.$u->uid.'</a></p>
+		<p>Se você não solicitou cadastro no sistema da OCI, então alguém o fez com seu endereço de email. Não se preocupe, o acesso somente será liberado para emails ativados e você só receberá comunicados nossos, caso ative o email.</p>
+		<p align="right">Atenciosamente,<br>Coordenação da OCI.</p>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>

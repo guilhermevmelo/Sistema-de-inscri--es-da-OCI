@@ -1,0 +1,25 @@
+/*
+ *
+ *
+ */
+ 
+#Content {
+	padding-top: 0;
+}
+
+#MainPanel {
+	padding-top: 180px;
+}
+
+#Panel {
+	padding: 0px;
+	padding-right: 446px;
+	text-align: right;
+}
+
+#Login {
+	width: 400px;
+	float: right;
+	padding: 15px;
+	border-left: 1px solid #343434;
+}

@@ -1,0 +1,54 @@
+
+
+<div class="informacoes">
+	<p>Lembre-se de que os alunos devem, <strong>obrigatoriamente</strong>, apresentar documento de identificação no dia da prova, como especificado no Regulamento da Olimpíada.</p>
+</div>
+
+
+<form action="#inscreve_competidor" method="post" name="frm_insc">
+
+<fieldset>
+	<label for="insc_nome">Nome Completo</label>
+	<input type="text" name="insc_nome" id="insc_nome" size="50" />
+</fieldset>
+
+<fieldset>
+	<label for="insc_serie">Serie</label>
+	<select name="insc_serie" id="insc_serie" onChange="muda_serie(this.value)">
+		<option value="6EF">6º ano - Ensino Fundamental</option>
+		<option value="7EF">7º ano - Ensino Fundamental</option>
+		<option value="8EF">8º ano - Ensino Fundamental</option>
+		<option value="9EF">9º ano - Ensino Fundamental</option>
+		<option value="1EM">1º ano - Ensino Médio</option>
+		<option value="2EM">2º ano - Ensino Médio</option>
+		<option value="3EM">3º ano - Ensino Médio</option>
+	</select>
+</fieldset>
+
+<fieldset>
+	<label for="insc_nivel">Nível</label>
+	<input type="text" name="insc_nivel" id="insc_nivel" disabled="disabled" value="1" />
+	<input type="hidden" name="insc_hidden" id="insc_hidden" value="1" />
+</fieldset>
+
+<fieldset>
+	<label for="insc_local">Local de prova</label>
+	<select name="insc_local" id="insc_local">
+		<option value="1">Fortaleza</option>
+		<option value="2">Sobral</option>
+		<option value="3">Juazeiro do Norte</option>
+	</select>
+</fieldset>
+
+<fieldset>
+	<label>Possui alguma necessidade especial?</label>
+	<input type="radio" name="insc_necessidade" value="0" id="insc_necessidade_nao" checked><label style="display:inline-block;" for="insc_necessidade_nao">Não</label><br>
+	<input type="radio" name="insc_necessidade" value="1" id="insc_necessidade_sim"><label style="display:inline-block;" for="insc_necessidade_sim">Sim</label>
+</fieldset>
+
+
+<fieldset>
+	<input type="submit" name="insc_sbmt" value="Inscrever" />
+</fieldset>
+
+</form>

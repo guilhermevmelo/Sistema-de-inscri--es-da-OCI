@@ -1,0 +1,272 @@
+/*
+ *
+ *
+ */
+ 
+/** resetting default styles **/
+html, body,
+div, header, footer, p, 
+h1, h2, h3, h4, h5,
+blockquote, span, q, 
+strong, small, img,
+ul, ol, li {
+	padding: 0;
+	margin: 0;
+}
+
+* {
+	
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+html {}
+
+body {
+	font-family: "Avenir", Trebuchet MS, sans-serif;
+	font-size: 14px;
+	color: #343434;
+	background-color: #f3f3f3;
+}
+
+a {
+	text-decoration: none;
+	color: #f98a42;
+}
+
+a:hover {
+	color: #f9af42;
+}
+
+div {}
+
+p {}
+
+ul {}
+
+li {}
+
+h1 {
+	font-weight: bold;
+	font-size: 22px;
+}
+
+/** structural elements **/
+#Page {
+	position: relative;
+	min-height: 100%;
+	height: auto;
+}
+
+#Content {
+	/* add padding-bottom accordingly to the footer height */
+	padding-top: 90px;
+	padding-bottom: 30px;
+}
+
+#Content p {
+	margin-bottom: 15px;
+}
+
+
+#Warnings {
+	color: #e60809;
+	font-size: 14px;
+	text-align: center;
+	padding: 5px 0;
+	border-bottom: 1px solid #f94243;
+	background-color: #fca5a5;
+	display: none;
+}
+
+#Warnings:hover {
+	cursor: pointer;
+}
+
+header {
+	width: auto;
+	padding: 5px;
+	background-color: #dce6bf;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	background-color: #343434;
+	color: #f0f0f0;
+	text-shadow: -1px -1px 1px #000;
+	font-size: 11px;
+}
+
+footer div#Footer {
+	width: auto;
+	padding: 5px;
+}
+
+div.wrapper960 {
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
+}
+
+#Logo {
+	position: absolute;
+	margin-top: -5px;
+	padding: 10px 0;
+	border: 1px solid #a6d220;
+	border-top: 0;
+	background-color: #f3f3f3;
+	box-shadow: 0 5px 15px #999;
+}
+
+/** the steps **/
+#Passo1, #Passo2, #Passo3, #Passo4, #Passo5, #Passo6 { display: none; }
+
+/** the main menu elements**/
+#MainMenu {
+	text-align: right;
+	padding: 30px 15px 15px 15px;
+}
+
+#MainMenu ul {}
+
+#MainMenu ul li {
+	list-style: none;
+	margin: 0;
+	display: inline-block;
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+#MainMenu ul li a:hover { border-bottom: 3px solid; border-top: 3px solid; }
+
+/** form elements **/
+input {
+	font-size: 18px;
+	padding: 7px;
+	background-color: #808080;
+	border: 1px solid #343434;
+	color: #fff;
+	outline: none;
+	
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+}
+
+input:focus {
+	border-color: #343434;
+	box-shadow: 0 0 10px #343434 inset;
+}
+
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+label {
+	display: block;
+	font-size: 12px;
+	padding-left: 10px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+	padding: 10px;
+	border: none; /*1px solid #2177ed;*/
+	//border-radius: 5px;
+	font-size: 10px;
+	text-transform: uppercase;
+	background-color: #a6d220;
+	color: #fff;
+}
+
+input[disabled=disabled], input[disabled=disabled]:hover {
+	background-color: #999 !important;
+	border-color: #333 !important;
+}
+
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+	//color: #343434;
+	background-color: #bee73d;
+	cursor: pointer;
+}
+ 
+/** tables **/ 
+table {
+	width: 800px;
+	margin-bottom: 10px;
+}
+
+td {
+	margin: 2px;
+	padding: 3px;
+}
+
+th {
+	text-align: left;
+}
+
+tr:nth-child(2n + 0) td {
+	background-color: #fef6d6;
+}
+
+tr:nth-child(2n + 1) td {
+	background-color: #f0fad3;
+}
+
+td:last-child {
+	width: 150px;
+}
+
+table.no-width, table.no-width td:last-child { width: auto; }
+
+/** specific styles **/
+.italic { font-style: italic; }
+.underlined { text-decoration: underline; }
+.bold { font-weight: bold; }
+
+.alignRight { text-align: right; }
+.alignLeft { text-align: left; }
+.alignCenter { text-align: center; }
+.justify { text-align: justify; }
+
+.floatRight { float: right; }
+.floatLeft { float: left; }
+.clear { clear: both; }
+
+.blue { color: #2206bb; }
+.red { color: #e60809; }
+.green { color: #09bb06; }
+.lightGreen { color: #a0d107; }
+
+.inlineBlock { display: inline-block; }
+.block { display: block; }
+
+.exemplo {
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 12px;
+	color: #5a5a5a;
+	padding-left: 30px;
+}
+
+.informacoes {
+	width: 350px;
+	border: 1px solid #f94243;
+	background: rgba(250, 115, 116, 0.8);
+	float: right;
+}
+
+.informacoes p {
+	color: #f3f3f3;
+	padding: 5px;
+	margin-bottom: 0 !important;
+}
